@@ -1,0 +1,42 @@
+{
+  "name": "PhonixChat-bot",
+  "description": "ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ᴄʜᴀᴛ ʙᴏᴛ ᴡɪᴛʜ ʙʀᴏᴀᴅᴄᴀsᴛ ғᴇᴀᴛᴜʀᴇ",
+  "logo": "https://graph.org/file/89993d13fd08c45131b2c.jpg",
+  "keywords": [
+    "Chatbot",
+    "mongodb",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "repository": "https://github.com/TEAM-PHONIX-BOTS/PhonixChat-bot",
+  "env": {
+    "API_ID": {
+      "description": "ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ my.telegram.org/apps.",
+      "required": true,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ my.telegram.org/apps.",
+      "required": true,
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "ᴀ ʙᴏᴛ ᴛᴏᴋᴇɴ ғʀᴏᴍ @BotFather",
+      "required": true,
+      "value": ""
+    },
+    "MONGO_URL": {
+      "description": "Get a mongodb url from https://cloud.mongodb.com.",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "ᴜsᴇʀ ɪᴅ ᴏғ ᴛʜᴇ ᴜsᴇʀ ᴡʜᴏ ᴡɪʟʟ ᴋɴᴏᴡɴ ᴀs ᴏᴡɴᴇʀ ᴏғ ᴛʜᴇ ʙᴏᴛ.",
+      "required": true,
+      "value": ""
+    }
+  }
+}
