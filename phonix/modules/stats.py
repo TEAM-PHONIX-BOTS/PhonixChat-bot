@@ -8,7 +8,7 @@ from pyrogram.types import Message
 from pyrogram import *
 from pyrogram.types import *
 from config import OWNER_ID
-from phonix import dev, OWNER
+from PhonixChatbot import dev, OWNER
 from phonix.database.chats import get_served_chats
 from phonix.database.users import get_served_users
 
