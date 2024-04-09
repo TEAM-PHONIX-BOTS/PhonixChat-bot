@@ -26,7 +26,7 @@ db = mongo.Anonymous
 
 
 OWNER = config.OWNER_ID
-# DEVS = config.SUDO_USERS | config.OWNER_ID
+# VENOM = config.SUDO_USERS | config.OWNER_ID
 
 
 class VENOM(Client):
@@ -50,18 +50,18 @@ class VENOM(Client):
         await super().stop()
 
 
-dev = Client(
-    "Dev",
+VENOM = Client(
+    "VENOM",
     bot_token=config.BOT_TOKEN,
     api_id=config.API_ID,
     api_hash=config.API_HASH,
     # plugins=dict(root="phonix.modules"),
 )
 
-dev.start()
+VENOM.start()
 
 BOT_ID = config.BOT_TOKEN.split(":")[0]
-x = dev.get_me()
+x = VENOM.get_me()
 BOT_NAME = x.first_name + (x.last_name or "")
 BOT_USERNAME = x.username
 BOT_MENTION = x.mention
